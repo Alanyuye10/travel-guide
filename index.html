@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tourguide</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Box Icons CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <nav>
+        <div class="logo">Travel<span>Guide</span></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Packages</a>
+          </li>
+          <li><a href="#">Transport</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <!-- overlay content -->
+      <div class="overlay">
+        <div class="content">
+          <h1>Travel</h1>
+          <h2>far enough,</h2>
+          <h1>You meet</h1>
+          <h2>yourself</h2>
+          <button
+            class="enquiry-button"
+            data-bs-toggle="modal"
+            data-bs-target="#enquiryModal"
+          >
+            ENQUIRY NOW
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Enquiry Form Modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enquiryModal"
+      tabindex="-1"
+      aria-labelledby="enquiryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enquiryModalLabel">
+              Enter Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div><br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero section -->
+    <section id="hero">
+      <div class="container">
+        <h2 class="text-center mt-5 mb-5">HONEYMOON PACKAGES</h2>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="https://media.weddingz.in/images/b6469d355825df56812679a6492abdb1/Best-honeymoon-destinations-in-India-and-best-honeymoon-destinations-outside-India-26.jpg"
+                    alt="kerala honeymoon"
+                  />
+                  <h2>Kerala Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    Enchanting yet thought provoking, the backwater of Kerala makes a perfect sight to spend a leisurely honeymoon.
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="https://www.gtholidays.in/wp-content/uploads/2022/03/Goa-Honeymoon-Package-Cost.webp"
+                    alt="goa honeymoon"
+                  />
+                  <h2>Goa Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    No city in India screams ‘party’ the way Goa does! Take your partner on a romantic holiday to this golden land of the sun, sand, and sea and make your bond last forever
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="https://www.gtholidays.in/wp-content/uploads/2022/03/cost-of-Maldives-Honeymoon-Packages-from-Chennai.jpeg"
+                    alt="Maldives honeymoon"
+                  />
+                  <h2>Maldives Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    When it comes to romantic getaways, there are few experiences that can beat a Maldives honeymoon.
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="package-card">
+                  <img
+                    src="https://www.himachaltourtravels.com/himachal/thumb/honeymoon.jpg"
+                    alt="Manali honeymoon"
+                  />
+                  <h2>Manali Honeymoon Packages</h2>
+                  <p class="duration">(04 Nights / 05 Days)</p>
+                  <p>
+                    Manali is a popular honeymoon destination for many reasons, including: Manali is located in the foothills of the Himalayas.
+                  </p>
+                  <a href="#" class="btn">BOOK NOW</a>
+                </div>
+              </div>
+        </div>
+          
+    </section>
+
+    <!--Tours section -->
+    <section class="container my-5 mb-5">
+      <h2 class="text-center mb-4">SPECIAL KERALA FESTIVAL TOURS</h2>
+      <!-- Carousel -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!-- Carousel inner part -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.news18.com/ibnlive/uploads/2021/08/onam-9-1.jpg"
+              class="d-block w-100 carousel-img"
+              alt="Onam Festival"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ONAM FESTIVAL</h5>
+              <p>
+                On this 10 days of Onam festival, each day represents Pookalam On the first day only single flower is used, on the second day two different colour is used and on the final day 10 different colour is used. There is also believe that Pookalam defines the fight between Asuras and Devas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.onmanorama.com/content/dam/mm/en/travel/travel-news/images/2022/9/4/nehru-trophy-boat-race-2022-art.jpg"
+              class="d-block w-100 carousel-img"
+              alt="Kerala Boat Race"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>NEHRU TROPHY BOAT RACE</h5>
+              <p>
+                This Boat race has its origin in the Kerala district Alappuzha and was inaugurated in 1952 by Prime Minister Jawaharlal Nehru. The winner was awarded a trophy in the name of Jawaharlal Nehru.
+              </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img
+              src="https://64.media.tumblr.com/ce6b425ee473a09a8c616f87879d1f1a/tumblr_ofl96w0SuH1ru322to1_1280.jpg"
+              class="d-block w-100 carousel-img"
+              alt="Kerala Boat Race"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PULI KALI</h5>
+              <p>
+                Onam is Kerala's biggest festival and the king wanted to celebrate the 4th day of Onam by showing off the might of his soldiers. Thus Pulikali or the Tiger Dance was born and it became so popular that even the Muslim soldiers of the British cantonment stationed in Thrissur celebrated it with great fervour.
+              </p>
+          </div>
+        </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- spacing to look good -->
+      <div class="mb-5"></div>
+      <!-- vid & img section -->
+      <div class="row">
+        <div class="col-md-6">
+            <iframe width="100%" height="335" src="https://www.youtube.com/embed/zD43hknPtLc?si=n7TUs92dgUNIxepW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-md-6">
+          <img
+            src="https://www.traveltourguru.in/wp-content/uploads/2016/12/Onam-Festival.jpg"
+            alt="festival imgage"
+            class="img-fluid"
+            width="100%" height="315"/>
+        </div>
+      </div>
+    </section>
+
+    <!--  North India tours section (-_-) -->
+    <section class="container my-5 mb-5">
+      <h2 class="text-center mb-4">NORTH INDIAN TOURIST PLACES</h2>
+
+      <div class="row">
+        <div class="col-md-3 bd">
+          <img
+            class="img-fluid"
+            src="https://assets-news.housing.com/news/wp-content/uploads/2022/09/07110545/15-beautiful-places-in-India-for-tourists-to-visit.jpg"
+            alt="Taj"
+          />
+        </div>
+        <div class="col-md-3 bd">
+          <img
+            class="img-fluid"
+            src="https://housing.com/news/wp-content/uploads/2022/11/Famous-tourist-places-in-India-state-compressed.jpg"
+            alt="Amritsar"
+          />
+        </div>
+        <div class="col-md-3 bd">
+          <img
+            class="img-fluid"
+            src="https://assets-news.housing.com/news/wp-content/uploads/2022/07/18131039/shimla-feature-compressed.jpg"
+            alt="Shimla"
+          />
+        </div>
+        <div class="col-md-3 bd">
+          <img
+            class="img-fluid"
+            src="https://www.varanasiboatbooking.com/assets/images/b3.jpg"
+            alt="Varanasi city temple"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features section-->
+    <section class="container my-5 mb-5">
+      <h2 class="text-center mb-4">OUR PREMIUM FEATURES</h2>
+<br>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dq-okFGuPd3IfAKWT0A3dPf40SBEKW8JzA&s"
+            />
+            <h3 class="service-title">FREE BIKE RIDE</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULy8hdai7UEwGtV-hb3Lj5_RmOXxzxlUvFA&s"
+              alt="taxi ride"
+            />
+            <h3 class="service-title">CAMPFIRE</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid"
+              src="https://www.terraquechuaperu.com/wp-content/uploads/2022/12/guide-humantay-lake-1200x700.jpg"
+              alt="customer support girl"
+            />
+            <h3 class="service-title">TOUR GUIDE</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card p-4">
+            <img
+              class="img-fluid"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlo4_aXQhf6RAfGrKz6LlBTKumRfYf3EXmg&s"
+              alt="customer support girl"
+            />
+            <h3 class="service-title">24X7 SUPPORT</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonial section -->
+    <section id="testimonials" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Customers Feedback</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 text-center">
+              <img
+                class="round-cricle mb-3"
+                src="https://www.profilebakery.com/wp-content/uploads/2023/04/AI-Portrait-Photos-Men.jpg"
+                alt="Customer 1"
+              />
+              <p class="testimonial-text">
+                "Once again, many thanks for making such a trip possible. The organisation, the effectiveness, the planning and on top the driver were just perfect. We felt so comfortable although being so far from home"
+              </p>
+              <h5 class="customer-name">Austin Xavier</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 text-center">
+              <img
+                class="round-cricle mb-3"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpXswb932OXJ4OI2GqdUVDWdhC0xZ-WRFkw&s"
+                alt="Customer 2"
+              />
+              <p class="testimonial-text">
+                "It is a great pleasure to let you know that above tour you organized was a huge success for our group in every possible way we could imagine. Feel free to share this letter with anyone you feel necessary.Thanks again to you"
+              </p>
+              <h5 class="customer-name">Teena Alex</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 text-center">
+              <img
+                class="round-cricle mb-3"
+                src="https://www.profilebakery.com/wp-content/uploads/2023/04/AI-Portrait.jpg"
+                alt="Customer 3"
+              />
+              <p class="testimonial-text">
+                "I must say I was delighted with the service you provided - it was just what I wanted. This is the second time I have used your services, and both times you provided a faultless experience.
+                I will definitely recommend you to others.
+              </p>
+              <h5 class="customer-name">Steeve Roger</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+                At Travel Guide, we are passionate explorers dedicated to crafting unforgettable journeys. With a wealth of experience and local expertise, we specialize in curating personalized travel experiences that cater to your unique interests and preferences.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick links</h5>
+           <div class="quick">
+             <li class="mb-2"><a href="#" class="text-white">Home</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Services</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Packages</a></li>
+              <li><a href="#" class="text-white">Hotels</a></li>
+           </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>Email: support@travelguide.com</p>
+            <p>Phone: +91 1234567890</p>
+            <div class="social-icons">
+              <a href="#" class="text-white"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="text-white"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="text-white"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- copyright -->
+    <div class="bg-dark text-white text-center py-3">
+      <p>&copy; Travel Guide 2024 | Developed by Alan Yuye.</p>
+    </div>
+    <!-- scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
